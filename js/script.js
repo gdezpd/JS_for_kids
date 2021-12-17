@@ -1,12 +1,51 @@
-let leftOffset = 0;
-let moveHeading = function () {
-    $("#heading").offset({left:leftOffset});
-    leftOffset++;
-    if (leftOffset >200) {
-        leftOffset = 0;
-    }
-}
-setInterval(moveHeading, 10);
+// let leftOffset = 0;
+// let moveHeading = function () {
+//     $("#heading").offset({
+//         left:leftOffset,
+//     });
+//     leftOffset++;
+//     if (leftOffset >200) {
+//         leftOffset = 0;
+//     }
+// }
+// setInterval(moveHeading, 30);
+
+
+
+// $('html').mousemove(function (event) {
+//     $('#heading').offset({
+//         left: event.pageX,
+//         top: event.pageY,
+//     });
+// });
+
+$("html").click(function (event) {
+    $("#heading").offset({
+        left: event.pageX,
+        top: event.pageY
+    });
+});
+
+// var clickHandler = function (event) {
+//     console.log("Клик! " + event.pageX + " " + event.pageY);
+// };
+// $("h1").click(clickHandler);
+//
+//
+
+
+// let leftOffset = 0;
+// let moveHeading = function () {
+//     $("#heading").offset({left:leftOffset});
+//     leftOffset++;
+//     if (leftOffset >200) {
+//         leftOffset = 0;
+//     }
+// }
+// setInterval(moveHeading, 10);
+//
+
+
 
 
 // var doHomeworkAlarm = function () {
@@ -14,6 +53,8 @@ setInterval(moveHeading, 10);
 // };
 // var timeoutId = setTimeout(doHomeworkAlarm, 60000);
 //
+
+
 
 
 // function timeUp() {
